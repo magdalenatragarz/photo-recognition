@@ -16,7 +16,7 @@ public class API {
         String maxKey="";
         String filename;
         try {
-            Indico indico = new Indico("1558e05956ba46730408f2b2d5b34480");
+            Indico indico = new Indico("put your indico key here");
             IndicoResult single = indico.imageRecognition.predict(imgPath);
             Map<String, Double> result = single.getImageRecognition();
             for (int i = 0; i < 4; i++) {
